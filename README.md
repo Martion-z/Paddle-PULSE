@@ -23,7 +23,7 @@ align_face.py  图片预处理文件（人脸对齐）
 ## 2.运行
 终端执行`python3 run.py`即可运行代码，算法通过不断迭代寻找最佳输出图像，输出结果（1024x1024）存在runs文件夹中。   
 以下参数可调节:  
--input_dir default='input' 输入路径
+-input_dir default='input' 输入路径   
 -output_dir default='runs' 输出路径   
 -batch_size default=1 每批次大小   
 -seed 随机种子   
