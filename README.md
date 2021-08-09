@@ -36,7 +36,7 @@ drive.py  驱动下载类
 
 
 # 三、结果对比
-celeba HQ数据集中随机选取了10张图片（128x128），比较其torch版本和paddle版本的输出结果（1024x1024） 
+celeba HQ数据集中随机选取了10张图片（128x128），比较其torch版本和paddle版本的输出结果（1024x1024），均进行100次迭代 
     
 
 ![image](https://tva1.sinaimg.cn/large/008i3skNgy1gtauf1g3upj30tj0gl0v3.jpg)  
