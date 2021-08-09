@@ -13,13 +13,12 @@ loss.py 损失函数类
 SphericalOptimizer.py 文件里为优化器类    
 bicubic.py  双三次下采样类   
 drive.py  驱动下载类   
-align_face.py  图片预处理文件（人脸对齐）
 
 
 # 二、代码运行
 ## 1.输入
 + 输入图片需放置于input文件夹中，文件夹input里现有图片是对celeba数据集预处理好的图片（128x128），可直接用于测试；
-+ 若需要测试自己的图片，则需要通过align_face.py函数进行预处理（人脸对其以及缩放至128x128），将需要预处理的图片放入文件夹init_pic里，运行align_face.py，处理后的图片会自动存入input文件夹。
+
 ## 2.运行
 终端执行`python3 run.py`即可运行代码，算法通过不断迭代寻找最佳输出图像，输出结果（1024x1024）存在runs文件夹中。   
 以下参数可调节:  
