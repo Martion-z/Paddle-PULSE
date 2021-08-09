@@ -44,7 +44,7 @@ parser = argparse.ArgumentParser(description='pulse')
 
 #I/O arguments
 parser.add_argument('-input_dir', type=str, default='input', help='input data directory')
-parser.add_argument('-output_dir', type=str, default='output2', help='output data directory')
+parser.add_argument('-output_dir', type=str, default='runs', help='output data directory')
 parser.add_argument('-cache_dir', type=str, default='cache', help='cache directory for model weights')
 parser.add_argument('-duplicates', type=int, default=1, help='How many HR images to produce for every image in the input directory')
 parser.add_argument('-batch_size', type=int, default=1, help='Batch size to use during optimization')
