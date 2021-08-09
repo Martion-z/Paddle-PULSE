@@ -1,14 +1,21 @@
-# 复现论文PULSE
-论文名称： PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models
-数据集： http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
-验收标准： CelebA HQ 3.6
+# 复现  PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models
+论文名称： PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models   
+paper link：https://arxiv.org/pdf/2003.03808v3.pdf   
+数据集： http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html   
+验收标准： 输入128*128  CelebA HQ 3.6
 
-1、AI Studio 报名：你需要在AI Studio 填写相关信息，完成AI Studio报名；
-2、报名成功后，你需要进入百度飞桨挑战赛QQ交流群（602104223），所有大赛相关信息都会在群中及时同步；
-3、根据你想要复现的论文，在github 新建一个repo，在 readme 中简单描述一下论文即可；
-4、重要： 在GitHub 的 Pinned ISSUE ，按格式回复你的信息，正式完成报名；
-5、完成报名后，你需要跑通原论文参考代码（仅需跑通验证/预测即可，不需要完成训练）；
-6、福利： 跑通原论文代码后，你可以联系工作人员，简要描述一下模型的重要信息并给出原论文代码的预测结果，这样就可以进入 专属 答疑群，群中有百度资深研发工程师，一对一贴身完成复现答疑；
-7、重要： 使用飞桨框架复现论文，完成复现后，在GitHub 的 Pinned ISSUE ，按格式回复你的复现结果，正式完成结果提交；
-8、提交后3日内，我们会进行验收，如果精度符合要求，会宣布该论文复现成功并更新比赛相关信息（复现成功后，其他提交将无效）
-   
+# 一、代码结构
+stylegan.pdparams为在FFQH数据集上预训练好的styleGan的生成器的权重   
+gaussion_fit为在FFQH数据集上预训练好的styleGan的非线性映射网络
+
+
+# 二、代码运行
+## 1.输入
++ 输入图片需放置于input文件夹中，并且输入的图片需要进行人脸对齐预处理，celebaHQ128文件夹内是对于celeba数据集预处理好的图片（128x128），可直接放入input用于测试；
++ 若需要测试自己的图片，可以通过align_face.py函数进行预处理：将需要预处理的图片放入init_pic里，运行align_face.py，处理后的图片会自动存入input文件夹。
+## 2.运行
+终端执行`python3 run.py`即可运行代码，算法通过不断迭代寻找最佳输出图像，输出结果（1024x1024）存在runs文件夹中。   
+以下参数可调节:   
+
+# 三、结果对比
+celeba HQ数据集中随机选取了10张图片（128x128），比较其torch版本和paddle版本的输出结果（1024x1024）
