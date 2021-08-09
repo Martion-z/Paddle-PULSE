@@ -1,7 +1,6 @@
 # 复现  PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models
 论文名称： PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models   
 paper link：https://arxiv.org/pdf/2003.03808v3.pdf   
-数据集： http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html   
 验收标准： 输入128*128  CelebA HQ 3.6
 
 # 一、代码结构
@@ -18,4 +17,5 @@ gaussion_fit为在FFQH数据集上预训练好的styleGan的非线性映射网�
 以下参数可调节:   
 
 # 三、结果对比
-celeba HQ数据集中随机选取了10张图片（128x128），比较其torch版本和paddle版本的输出结果（1024x1024）
+celeba HQ数据集中随机选取了10张图片（128x128），比较其torch版本和paddle版本的输出结果（1024x1024）   
+![image](https://github.com/Martion-z/Paddle-PULSE/illustration/compare1.png)
