@@ -5,7 +5,15 @@ paper link：https://arxiv.org/pdf/2003.03808v3.pdf
 
 # 一、代码结构
 stylegan.pdparams为在FFQH数据集上预训练好的styleGan的生成器的权重   
-gaussion_fit为在FFQH数据集上预训练好的styleGan的非线性映射网络
+gaussion_fit为在FFQH数据集上预训练好的styleGan的非线性映射网络  
+run.py 为运行主函数   
+stylegan_paddle.py 文件为styleGan的网络结构   
+pulse.py 为论文PULSE提取的算法，利用预先训练好的gan不断迭代寻找最优图片   
+loss.py 损失函数类
+SphericalOptimizer.py 文件里为优化器类    
+bicubic.py  双三次下采样类   
+drive.py  驱动下载类   
+align_face.py  图片预处理文件（人脸对齐）
 
 
 # 二、代码运行
