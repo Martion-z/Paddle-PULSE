@@ -17,7 +17,9 @@ drive.py  驱动下载类
 
 # 二、代码运行
 ## 1.输入
-+ 输入图片需放置于input文件夹中，文件夹input里现有图片是对celeba数据集预处理好的图片（128x128），可直接用于测试；
++ 输入图片需放置于input文件夹中，与原参考代码一致，输入图片经过了预处理(aligned and downscaled),文件夹input里现有图片是对celeba数据集预处理好的图片（128x128），可直接用于测试；
+
+(附上预处理好的Celeba HQ 128*128数据集百度云盘链接  https://pan.baidu.com/s/1t9FpITUcdVwTlJpLsyQ8pg  密码: gd8r)
 
 ## 2.运行
 终端执行`python3 run.py`即可运行代码，算法通过不断迭代寻找最佳输出图像，输出结果（1024x1024）存在runs文件夹中。   
