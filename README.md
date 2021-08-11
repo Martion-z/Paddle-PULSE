@@ -50,7 +50,7 @@ celeba HQ数据集中随机选取了10张图片（128x128），比较其torch版
 以下为结果截图:   
 **torch版本：average_NIQE=2.174**
 ![image](https://tva1.sinaimg.cn/large/008i3skNgy1gtcwbx6ua5j60q00lltc302.jpg)
-**paddle版本：average_NIQE=2.132**
-![image](https://tva1.sinaimg.cn/large/008i3skNgy1gtcwf1dlzpj60q50nkwki02.jpg)
+**paddle版本：average_NIQE=2.132**   
+![image](https://tva1.sinaimg.cn/large/008i3skNgy1gtcx4g6u1hj60q50nkwki02.jpg)
 
 
