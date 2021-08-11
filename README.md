@@ -20,7 +20,7 @@ niqe.py NIQE评价类
 ## 1.输入
 + 输入图片需放置于input文件夹中，与[原参考代码](https://github.com/adamian98/pulse)一致，输入图片经过了预处理(aligned and downscaled),文件夹input里现有图片是对celeba数据集预处理好的图片（16*16），可直接用于测试；
 
-(附上部分预处理好的Celeba HQ 16*16数据集百度云盘链接 )
+(附上部分预处理好的Celeba HQ 16*16数据集百度云盘链接 链接：https://pan.baidu.com/s/1pboej7paTiWpQN1BgMIzaQ 提取码：5weo)
 
 ## 2.运行
 终端执行`python3 run.py`即可运行代码，算法通过不断迭代寻找最佳输出图像，输出结果（1024x1024）存在output1024文件夹中。   
@@ -38,7 +38,7 @@ niqe.py NIQE评价类
 
 # 三、结果对比
 ## 1.视觉效果
-celeba HQ数据集中随机选取了10张图片（128x128），比较其torch版本和paddle版本的输出结果（1024x1024），均进行100次迭代 
+celeba HQ数据集中随机选取了20张图片（16x16），比较其torch版本和paddle版本的输出结果（1024x1024），均进行100次迭代 
     
 
 ![image](https://tva1.sinaimg.cn/large/008i3skNgy1gtcwqt3a1fj60ps0extah02.jpg)  
