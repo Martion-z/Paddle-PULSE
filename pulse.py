@@ -16,7 +16,7 @@ from drive import open_url
 import argparse
 import paddle.nn as nn
 from paddle.static import InputSpec
-from visualdl import LogWriter
+
 
 class PULSE(paddle.nn.Layer):
     def __init__(self, cache_dir, batch_size, verbose=True):
