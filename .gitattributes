@@ -1,1 +1,0 @@
-styleGan.pdparams filter=lfs diff=lfs merge=lfs -text
