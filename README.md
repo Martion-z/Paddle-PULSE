@@ -4,7 +4,7 @@ English | [简体中文](./README_cn.md)
 
 # 一、Introduction
 
-An implementation of the SR models (`PULSE`) proposed in paper [PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models  ](https://arxiv.org/pdf/2003.03808v3.pdf) with PaddlePaddle.  PULSE traverses the high-resolution natural image manifold, searching for images that downscale to the original LR image.This is formalized through the “downscaling loss,” which guides exploration through the latent space of a generative model.    
+An implementation of the SR models (`PULSE`) proposed in paper [PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models  ](https://arxiv.org/pdf/2003.03808v3.pdf) with PaddlePaddle.  PULSE traverses the high-resolution natural image manifold, searching for images that downscale to the original LR image.This is formalized through the “down-scaling loss,” which guides exploration through the latent space of a generative model.    
 
 **Reference Project：**
 
